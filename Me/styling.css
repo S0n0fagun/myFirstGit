@@ -1,0 +1,10 @@
+body
+html
+{font-family: 'Cambo', serif;}
+p{color: red;}
+#myId {color: green;
+}
+  <style>
+  .navLink {border: solid; border-radius: 10px; padding: 4px;
+    position: relative;}
+  </style>
