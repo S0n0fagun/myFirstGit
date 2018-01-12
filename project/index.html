@@ -1,68 +1,25 @@
 <!DOCTYPE html>
-<!-- <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Test</h1>
-     number: <input type="text" id="name">
-    <button id=(btn1)<button type="button" name="button">1</button>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>JavaScript Test</title>
+ </head>
+ <body>
+<h2> JS Test </h2>
 
-    <script src="app.js"></script>
+<input id="display" type="text" app.js><br>
+
+<button id="bt1" type="button"> 1 </button> <button id="bt2" type="button"> 2 </button> <button id="bt3" type="button"> 3 </button> <button id="bt+" type="button"> + </button> <br>
+<button id="bt4" type="button"> 4 </button> <button id="bt5" type="button"> 5 </button> <button id="bt6" type="button"> 6 </button> <button id="bt-" type="button"> - </button> <br>
+<button id="bt7" type="button"> 7 </button> <button id="bt8" type="button"> 8 </button> <button id="bt9" type="button"> 9 </button> <button id="bt/" type="button"> / </button> <br>
+<button id="bt0" type="button"> 0 </button> <button id="btD" type="button"> . </button> <button id="btC" type="button"> C </button> <button id="bt*" type="button>"> * </button> <br>
+<button id="btA" type="button"> Answer </button>
 
 
-  </body>
-</html> -->
-<script>
- var value1=value2=result=0;
-function calc(val) {
-    value1= parseInt(document.getElementById(val).value);
-    document.getElementById("textBox").value=document.getElementById("textBox").value+value1;
-    value1=parseInt(document.getElementById("textBox").value);
-}
-// function calc(val) {
-//     value1= parseInt(document.getElementById(val).value);
-//     document.getElementById("textBox").value=document.getElementById("textBox").value-value1;
-//     value1=parseInt(document.getElementById("textBox").value);
-//}
-function DoSumm(){
-    document.getElementById("textBox").value="";
-    value2=value1;
-    value1=0;
 
-}
-function FindResult(){
-    result=value1+value2;
-    document.getElementById("textBox").value=result;
-}
-</script>
-<tr>
-<td>
-    <input type="text"   id="textBox" size="5"/>
-    <br/><br/>
-</td>
-</tr>
-<tr>
-<td>
-    <input type="button" id="btnone"   value="  1  " OnClick="calc(this.id)"/>
-    <input type="button" id="btntwo"   value="  2  " OnCLick="calc(this.id)"/>
-    <input type="button" id="btnthree" value="  3  " OnClick="calc(this.id)"/>
 
-    <br/>
-    <input type="button" id="btnfour"  value="  4  " OnClick="calc(this.id)"/>
-    <input type="button" id="btnfive"  value="  5  " OnCLick="calc(this.id)"/>
-    <input type="button" id="btnsix"   value="  6  " OnClick="calc(this.id)"/>
-    <br/>
-    <input type="button" id="btnseven" value="  7  " OnClick="calc(this.id)"/>
-    <input type="button" id="btneight" value="  8  " OnCLick="calc(this.id)"/>
-    <input type="button" id="btnnine"  value="  9  " OnClick="calc(this.id)"/>
-    <br/>
-    <input type="button" id="btnzero"  value="  0  " OnClick="calc(this.id)"/>
-    <input type="button" id="btneql"  value="  =  " OnClick="FindResult()"/>
-    <input type="button" name="plus"  value="  +  " OnClick="DoSumm()"/>
-    <input type="button" name="minus"  value="  -  " OnClick="DoSub()"/>
-    <br/>
-</td>
-</tr>
-</table>
+
+
+   <script src="app.js"></script>
+ </body>
+</html>
