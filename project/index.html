@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Test</h1>
+     number: <input type="text" id="name">
+    <button id=(btn1)<button type="button" name="button">1</button>
+
+    <script src="app.js"></script>
+
+
+  </body>
+</html> -->
+<script>
+ var value1=value2=result=0;
+function calc(val) {
+    value1= parseInt(document.getElementById(val).value);
+    document.getElementById("textBox").value=document.getElementById("textBox").value+value1;
+    value1=parseInt(document.getElementById("textBox").value);
+}
+// function calc(val) {
+//     value1= parseInt(document.getElementById(val).value);
+//     document.getElementById("textBox").value=document.getElementById("textBox").value-value1;
+//     value1=parseInt(document.getElementById("textBox").value);
+//}
+function DoSumm(){
+    document.getElementById("textBox").value="";
+    value2=value1;
+    value1=0;
+
+}
+function FindResult(){
+    result=value1+value2;
+    document.getElementById("textBox").value=result;
+}
+</script>
+<tr>
+<td>
+    <input type="text"   id="textBox" size="5"/>
+    <br/><br/>
+</td>
+</tr>
+<tr>
+<td>
+    <input type="button" id="btnone"   value="  1  " OnClick="calc(this.id)"/>
+    <input type="button" id="btntwo"   value="  2  " OnCLick="calc(this.id)"/>
+    <input type="button" id="btnthree" value="  3  " OnClick="calc(this.id)"/>
+
+    <br/>
+    <input type="button" id="btnfour"  value="  4  " OnClick="calc(this.id)"/>
+    <input type="button" id="btnfive"  value="  5  " OnCLick="calc(this.id)"/>
+    <input type="button" id="btnsix"   value="  6  " OnClick="calc(this.id)"/>
+    <br/>
+    <input type="button" id="btnseven" value="  7  " OnClick="calc(this.id)"/>
+    <input type="button" id="btneight" value="  8  " OnCLick="calc(this.id)"/>
+    <input type="button" id="btnnine"  value="  9  " OnClick="calc(this.id)"/>
+    <br/>
+    <input type="button" id="btnzero"  value="  0  " OnClick="calc(this.id)"/>
+    <input type="button" id="btneql"  value="  =  " OnClick="FindResult()"/>
+    <input type="button" name="plus"  value="  +  " OnClick="DoSumm()"/>
+    <input type="button" name="minus"  value="  -  " OnClick="DoSub()"/>
+    <br/>
+</td>
+</tr>
+</table>
